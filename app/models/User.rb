@@ -28,4 +28,15 @@ attr_accessor :recipes, :name
     Allergen.new(self, ingredient)
   end
 
+  def top_three_recipes # each recipe on card
+    card = RecipeCard.all.map do |card|
+       card.recipe
+     end
+    recipe_groups = card.group_by do |recipe|
+      card.count(recipe)  #grouped by count of recipe
+    end
+    count = recipe_groups.sort.reverse
+    return [count[0][1].uniq, count[1][1].uniq, count[2][1].uniq]
+  end
+
 end

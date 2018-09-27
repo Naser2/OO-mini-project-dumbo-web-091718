@@ -63,13 +63,13 @@ should return the recipe to which the entry belongs --> -->
 ### `Ingredient`
 Build the following methods on the Ingredient class
 
-- `Ingredient.all`
+<!-- - `Ingredient.all` -->
 should return all of the ingredient instances
 - `Ingredient.most_common_allergen`
 should return the ingredient instance that the highest number of users are allergic to
 
 
-### `RecipeIngredient`
+<!-- ### `RecipeIngredient`
 RecipeIngredient is the join between an ingredient and a recipe.  This is a has-many-through relationship
 Build the following methods on the RecipeIngredient class
 
@@ -78,13 +78,13 @@ should return all of the RecipeIngredient instances
 - `RecipeIngredient#ingredient`
 should return the ingredient instance
 - `RecipeIngredient#recipe`
-should return the recipe instance
+should return the recipe instance -->
 
-### `Allergen`
-An Allergen is a join between a user and an ingredient.  This is a has-many-through relationship.  What methods should an instance of this model respond to?
+<!-- ### `Allergen` -->
+<!-- An Allergen is a join between a user and an ingredient.  This is a has-many-through relationship.  What methods should an instance of this model respond to? -->
 
-- `Allergen.all`
-should return all of the Allergen instances
+<!-- - `Allergen.all`
+should return all of the Allergen instances -->
 
 
 
